@@ -52,7 +52,11 @@ function ExecuteStatus(source, statuses)
     for k,v in pairs(statuses) do 
         if Config.MaxValues[k] then
             local value = (0.01 * v) * Config.MaxValues[k]
-            xPlayer.PlayerData.metadata[k] = ((xPlayer.PlayerData.metadata[k] + value < 0) and 0 or (xPlayer.PlayerData.metadata[k] + value))
+            if xPlayer.PlayerData.metadata[k] then
+                xPlayer.PlayerData.metadata[k] = ((xPlayer.PlayerData.metadata[k] + value < 0) and 0 or (xPlayer.PlayerData.metadata[k] + value))
+            else
+                xPlayer.PlayerData.metadata[k] = (value > 0 and value or 0)
+            end
             xPlayer.Functions.SetMetaData(k, xPlayer.PlayerData.metadata[k])
         else
             Config.ExternalStatus(source, k, v)
