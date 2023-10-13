@@ -1,0 +1,128 @@
+body {
+    background-color: transparent;
+    color: white;
+    overflow: hidden;
+    font-size: 1vw;
+    user-select: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#app-main {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 2.5vw;
+    margin-right: 2.5vw;
+}
+
+.container > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1vw;
+}
+
+.container > div {
+    text-shadow: black 1px 1px;
+}
+
+.key {
+    position: relative;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    width: 2.25vw;
+    height: 2.25vw;
+    color: black;
+    font-size: 0.8vw;
+    font-weight: bold;
+    margin-right: 0.5vw;
+    text-shadow: none;
+}
+
+.secondary {
+    display: flex;
+    flex-direction: column;
+}
+
+.secondary > div:nth-child(1) {
+    font-size: 0.85vw;
+}
+
+.secondary > div:nth-child(2) {
+    font-size: 0.65vw;
+}
+
+
+.key .icon {
+    position: relative;
+    z-index: 3;
+  }
+  .key .circle {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 100%;
+  }
+  .key .circle:after {
+    content: '';
+    position: absolute;
+    top: calc(50% + 0.0vw);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(100% - 0.2vw);
+    height: calc(100% - 0.2vw);
+    border-radius: 100%;
+    background: white;
+  }
+  .key .circle span {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+  }
+  .key .circle span:first-child {
+    left: 0%;
+  }
+  .key .circle span:first-child em {
+    left: 100%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    transform-origin: 0% 50%;
+  }
+  .key .circle span:last-child {
+    left: 50%;
+  }
+  .key .circle span em {
+    position: absolute;
+    border-radius: 999px;
+    width: 100%;
+    height: 100%;
+    background:black;
+    transition: transform 500ms linear;
+  }
+  .key .circle span:last-child em {
+    left: -100%;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    transform-origin: 100% 50%;
+    transition-delay: 500ms;
+  }

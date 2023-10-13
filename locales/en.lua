@@ -1,0 +1,20 @@
+Language["en"] = {
+    pickup_drop = "Pickup Consumable",
+    item_active = "Put away or drop your current item to use another item.",
+    no_uses_left = "You cannot use this item anymore.",
+    interact_far = "You need to be closer to this point to interact with it.",
+    pickle_consumables_options = "Item Options",
+    give_item = "Give Item",
+    give_item_desc = "Gives the equipped item to the nearest player.",
+    place_item = "Place Item",
+    place_item_desc = "Places the equipped item on the ground.",
+    throw_item = "Throw Item",
+    throw_item_desc = "Throws the equipped item to where you are looking.",
+    cancel_action = "Cancel Action",
+    cancel_action_desc = "This will close this menu.",
+    interact_place = "[E] - Place Consumable",
+    give_dialog_player = "%s (ID: %s)",
+    give_dialog_player_title = "Player:",
+    give_dialog_portion = "Amount of Uses:",
+    nobody_near = "There is nobody near you to give an item to." 
+}
