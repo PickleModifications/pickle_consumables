@@ -32,7 +32,7 @@ RegisterNetEvent("pickle_consumables:executeStatus", function(status, value)
     if value >= 0 then
         TriggerEvent('esx_status:add', status, value)
     else
-        TriggerEvent('esx_status:remove', status, value)
+        TriggerEvent('esx_status:remove', status, -value)
     end
 end)
 
