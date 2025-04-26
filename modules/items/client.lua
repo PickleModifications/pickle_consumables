@@ -144,6 +144,8 @@ function ItemThread(name, metadata)
             end
             Wait(0)
         end
+        local ped = PlayerPedId()
+        ClearPedTasks(ped)
     end)
 end
 

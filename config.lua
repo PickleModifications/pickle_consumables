@@ -252,9 +252,9 @@ Config.Items = {
     },
     ["gin_shot"] = {
         uses = 5,
-        prop = { model = `prop_glass_gin`, boneId = 28422, offset = vec3(-0.05, 0.0, 0.0), rotation = vec3(0.0, 0.0, 0.0) },
-        idle = { dict = "amb@world_human_drinking@beer@male@idle_a", anim = "idle_a", time = 2000, params = { nil, nil, nil, 49 } },
-        animation = { dict = "amb@world_human_drinking@beer@male@base", anim = "base", time = 2000, params = { nil, nil, nil, 49 } },
+        prop = { model = `p_cs_shot_glass_s`, boneId = 28422, offset = vec3(-0.0, 0.0, 0.0), rotation = vec3(0.0, 0.0, 0.0) },
+        idle = { dict = "amb@world_human_drinking@beer@male@base", anim = "base", time = 2000, params = { nil, nil, nil, 49 } },
+        animation = { dict = "amb@world_human_drinking@beer@male@idle_a", anim = "idle_b", time = 2000, params = { nil, nil, nil, 49 } },
         effect = { name = "drunk", time = 5000, intensity = 1.0 },
         status = {
             hunger  = 0,
@@ -267,9 +267,9 @@ Config.Items = {
     },
     ["vodka_shot"] = {
         uses = 5,
-        prop = { model = `prop_shot_vodka`, boneId = 28422, offset = vec3(-0.05, 0.0, 0.0), rotation = vec3(0.0, 0.0, 0.0) },
-        idle = { dict = "amb@world_human_drinking@beer@male@idle_a", anim = "idle_a", time = 2000, params = { nil, nil, nil, 49 } },
-        animation = { dict = "amb@world_human_drinking@beer@male@base", anim = "base", time = 2000, params = { nil, nil, nil, 49 } },
+        prop = { model = `p_cs_shot_glass_s`, boneId = 28422, offset = vec3(-0.0, 0.0, 0.0), rotation = vec3(0.0, 0.0, 0.0) },
+        idle = { dict = "amb@world_human_drinking@beer@male@base", anim = "base", time = 2000, params = { nil, nil, nil, 49 } },
+        animation = { dict = "amb@world_human_drinking@beer@male@idle_a", anim = "idle_b", time = 2000, params = { nil, nil, nil, 49 } },
         effect = { name = "drunk", time = 5000, intensity = 1.0 },
         status = {
             hunger  = 0,
@@ -282,9 +282,9 @@ Config.Items = {
     },
     ["whiskey_bottle"] = {
         uses = 5,
-        prop = { model = `prop_whiskey_bottle`, boneId = 28422, offset = vec3(-0.05, 0.0, 0.0), rotation = vec3(0.0, 0.0, 0.0) },
-        idle = { dict = "amb@world_human_drinking@whiskey@male@base", anim = "base", time = 2000, params = { nil, nil, nil, 49 } },
-        animation = { dict = "amb@world_human_drinking@whiskey@male@idle_a", anim = "idle_a", time = 2000, params = { nil, nil, nil, 49 } },
+        prop = { model = `prop_vodka_bottle`, boneId = 28422, offset = vec3(-0.0, 0.0, -0.2), rotation = vec3(0.0, 0.0, 0.0) },
+        idle = { dict = "amb@world_human_drinking@beer@male@base", anim = "base", time = 2000, params = { nil, nil, nil, 49 } },
+        animation = { dict = "amb@world_human_drinking@beer@male@idle_a", anim = "idle_b", time = 2000, params = { nil, nil, nil, 49 } },
         effect = { name = "drunk", time = 5000, intensity = 1.0 },
         status = {
             hunger  = 0,
@@ -297,9 +297,9 @@ Config.Items = {
     },
     ["tequila_bottle"] = {
         uses = 5,
-        prop = { model = `prop_tequila_bottle`, boneId = 28422, offset = vec3(-0.05, 0.0, 0.0), rotation = vec3(0.0, 0.0, 0.0) },
-        idle = { dict = "amb@world_human_drinking@whiskey@male@base", anim = "base", time = 2000, params = { nil, nil, nil, 49 } },
-        animation = { dict = "amb@world_human_drinking@whiskey@male@idle_a", anim = "idle_a", time = 2000, params = { nil, nil, nil, 49 } },
+        prop = { model = `prop_vodka_bottle`, boneId = 28422, offset = vec3(-0.0, 0.0, -0.2), rotation = vec3(0.0, 0.0, 0.0) },
+        idle = { dict = "amb@world_human_drinking@beer@male@base", anim = "base", time = 2000, params = { nil, nil, nil, 49 } },
+        animation = { dict = "amb@world_human_drinking@beer@male@idle_a", anim = "idle_b", time = 2000, params = { nil, nil, nil, 49 } },
         effect = { name = "drunk", time = 5000, intensity = 1.0 },
         status = {
             hunger  = 0,
@@ -312,9 +312,9 @@ Config.Items = {
     },
     ["vodka_bottle"] = {
         uses = 5,
-        prop = { model = `prop_vodka_bottle`, boneId = 28422, offset = vec3(-0.05, 0.0, 0.0), rotation = vec3(0.0, 0.0, 0.0) },
-        idle = { dict = "amb@world_human_drinking@whiskey@male@base", anim = "base", time = 2000, params = { nil, nil, nil, 49 } },
-        animation = { dict = "amb@world_human_drinking@whiskey@male@idle_a", anim = "idle_a", time = 2000, params = { nil, nil, nil, 49 } },
+        prop = { model = `prop_vodka_bottle`, boneId = 28422, offset = vec3(-0.0, 0.0, -0.2), rotation = vec3(0.0, 0.0, 0.0) },
+        idle = { dict = "amb@world_human_drinking@beer@male@base", anim = "base", time = 2000, params = { nil, nil, nil, 49 } },
+        animation = { dict = "amb@world_human_drinking@beer@male@idle_a", anim = "idle_b", time = 2000, params = { nil, nil, nil, 49 } },
         effect = { name = "drunk", time = 5000, intensity = 1.0 },
         status = {
             hunger  = 0,
